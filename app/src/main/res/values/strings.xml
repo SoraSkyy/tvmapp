@@ -4,4 +4,17 @@
     <string name="tag_qr">Tag Participant (QR)</string>
     <string name="view_participant">View Participants</string>
     <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_connections">Connections</string>
+
+    <string name="pref_title_server_address">Server Address</string>
+    <string name="pref_default_display_name">10.0.2.2</string>
+
+    <string name="pref_title_port_number">Port Number</string>
+    <string name="pref_default_port_number">3000</string>
+
 </resources>
