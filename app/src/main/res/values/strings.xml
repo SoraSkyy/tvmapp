@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">TVM App</string>
+    <string name="app_name">Tembusu Vertical Marathon</string>
+    <string name="tag_participant">Tag Participant</string>
+    <string name="tag_qr">Tag Participant (QR)</string>
+    <string name="view_participant">View Participants</string>
+    <string name="settings">Settings</string>
 </resources>
