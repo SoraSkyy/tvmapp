@@ -11,10 +11,15 @@
     <!-- Example General settings -->
     <string name="pref_header_connections">Connections</string>
 
+
     <string name="pref_title_server_address">Server Address</string>
-    <string name="pref_default_display_name">10.0.2.2</string>
+    <string name="pref_default_server_address">http://10.0.2.2</string>
 
     <string name="pref_title_port_number">Port Number</string>
     <string name="pref_default_port_number">3000</string>
+
+    <string name="participant_key_name">name</string>
+    <string name="participant_key_bib">bib_number</string>
+    <string name="participant_key_wave">wave_number</string>
 
 </resources>
