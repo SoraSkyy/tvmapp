@@ -25,6 +25,7 @@
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
         <activity android:name=".AddParticipantActivity"></activity>
+        <activity android:name=".ScanActivity"></activity>
     </application>
 
 </manifest>
