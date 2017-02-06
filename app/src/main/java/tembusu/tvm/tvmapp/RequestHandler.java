@@ -18,15 +18,17 @@ import cz.msebera.android.httpclient.entity.StringEntity;
 public class RequestHandler {
 
     private Context c_;
+    private JsonHttpResponseHandler respHandler;
 
-    public RequestHandler(Context c) {
+    public RequestHandler(Context c, JsonHttpResponseHandler r) {
         c_ = c;
+        respHandler = r;
     }
 
     public void sendNewParticipantRequest(String name, String bibNum, String waveNum) {
         AsyncHttpClient client = new AsyncHttpClient();
         JSONObject jsonParams = new JSONObject();
-
+        /*
         AsyncHttpResponseHandler respHandler = new JsonHttpResponseHandler() {
             public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, org.json.JSONObject response) {
                 Log.d("Send Request", "SUCCESS");
@@ -37,7 +39,7 @@ public class RequestHandler {
                 Log.d("Send Request", "FAILURE");
                 Log.d("Send Request", errorResponse.toString());
             }
-        };
+        };*/
 
         try {
             jsonParams.put(c_.getString(R.string.participant_key_name), name);
