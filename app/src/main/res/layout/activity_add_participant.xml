@@ -59,7 +59,7 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:text="Scan QR Code"
-            android:onClick=""/>
+            android:onClick="scanQR"/>
 
         <Button
         android:layout_width= "match_parent"
