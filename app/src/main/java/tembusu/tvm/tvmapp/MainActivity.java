@@ -32,8 +32,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void testStuff(View view) {
-        RequestHandler r = new RequestHandler(this);
-        r.sendNewParticipantRequest("HELLO", "WORLD", "LALA");
+
+    }
+
+    public void addParticipant(View view) {
+        Intent intent = new Intent(this, AddParticipantActivity.class);
+        startActivity(intent);
     }
 
 }
