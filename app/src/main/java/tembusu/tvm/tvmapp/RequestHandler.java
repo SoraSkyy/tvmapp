@@ -25,7 +25,7 @@ public class RequestHandler {
         respHandler = r;
     }
 
-    public void sendNewParticipantRequest(String name, String bibNum, String waveNum) {
+    public void sendNewParticipantRequest(String bibNum, String waveNum) {
         AsyncHttpClient client = new AsyncHttpClient();
         JSONObject jsonParams = new JSONObject();
         /*
@@ -40,7 +40,7 @@ public class RequestHandler {
                 Log.d("Send Request", errorResponse.toString());
             }
         };*/
-
+        /*
         try {
             jsonParams.put(c_.getString(R.string.participant_key_name), name);
             jsonParams.put(c_.getString(R.string.participant_key_bib), bibNum);
@@ -53,11 +53,15 @@ public class RequestHandler {
             StringEntity entity = new StringEntity(jsonParams.toString());
             String url = getAbsoluteUrl("participants.json");
             client.post(c_, url, entity, "application/json", respHandler);
+            client.patch(c_, url, )
         } catch (Exception e) {
             Log.d("NewParticipantRequest", e.getMessage());
         }
+        */
 
-
+        String endpoint = "participants/update_wave_by_bib_number/"+ bibNum + "/" + waveNum;
+        String url = getAbsoluteUrl(endpoint);
+        client.patch(url, respHandler);
 
     }
 
